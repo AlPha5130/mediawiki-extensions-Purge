@@ -38,10 +38,12 @@
 		"MediaWiki\\Extension\\Purge\\": "includes/"
 	},
 	"Hooks": {
-		"SkinTemplateNavigation::Universal": "hookHandler"
+		"SkinTemplateNavigation::Universal": "skinHook"
 	},
 	"HookHandlers": {
-		"hookHandler": "MediaWiki\\Extension\\Purge\\Hooks"
+		"skinHook": {
+			"class": "MediaWiki\\Extension\\Purge\\Hooks"
+		}
 	},
 	"manifest_version": 2
 }
