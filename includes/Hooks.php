@@ -4,15 +4,14 @@ namespace MediaWiki\Extension\Purge;
 
 use SkinTemplate;
 
-class Hooks {
+class Hooks implements \MediaWiki\Hook\SkinTemplateNavigation__UniversalHook {
 
 	/**
 	 * @link https://www.mediawiki.org/wiki/Manual:Hooks/SkinTemplateNavigation
 	 * @param SkinTemplate $sktemplate The skin template object.
-	 * @param array $links The existing structured navigation links.
-	 * @return bool
+	 * @param array &$links The existing structured navigation links.
 	 */
-	public static function onSkinTemplateNavigation( SkinTemplate &$sktemplate, array &$links ) { 
+	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
 		// Use getRelevantTitle if present so that this will work on some special pages
 		$title = method_exists( $sktemplate, 'getRelevantTitle' )
 			? $sktemplate->getRelevantTitle()
@@ -23,11 +22,9 @@ class Hooks {
 
 			$links['actions']['purge'] = [
 				'class' => $action === 'purge' ? 'selected' : false,
-				'text' => wfMessage( 'purge' )->text(),
-				'href' => $title->getLocalUrl( 'action=purge' )
+				'text' => $sktemplate->msg( 'purge' )->text(),
+				'href' => '#'
 			];
 		}
-
-		return true;
 	}
 }
