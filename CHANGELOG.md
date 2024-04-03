@@ -1,3 +1,12 @@
+# Changelogs
+
+## Version 2.1.1
+* Fix ResourceLoader module paths.
+
+## Version 2.1.0
+* Remove deprecated `SkinTemplateNavigation` hook.
+* Bump major version as it will require MW 1.35+
+
 ## Version 2.0.0
 
 * Add extension registration.
