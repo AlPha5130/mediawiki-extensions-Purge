@@ -23,7 +23,7 @@ class Hooks implements \MediaWiki\Hook\SkinTemplateNavigation__UniversalHook {
 			$links['actions']['purge'] = [
 				'class' => $action === 'purge' ? 'selected' : false,
 				'text' => $sktemplate->msg( 'purge' )->text(),
-				'href' => '#'
+				'href' => $title->getLocalURL( 'action=purge' )
 			];
 		}
 	}
