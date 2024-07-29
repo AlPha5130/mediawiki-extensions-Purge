@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"IJzeren Jan"
+		]
+	},
+	"purge": "Izčistiti keš",
+	"purge-descriptionmsg": "Dodavaje na vsih obyčnyh stranicah zakladku za brzo izčiščenje keša",
+	"purge-failed": "Izčiščenje keša ne udalo se"
+}
