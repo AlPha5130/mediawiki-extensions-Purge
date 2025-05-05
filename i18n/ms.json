@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia\r */\r"
+			"Anakmalaysia\r */\r",
+			"Hakimi97"
 		]
 	},
-	"purge": "singkirkan",
-	"purge-descriptionmsg": "Membubuh tab singkirkan pada semua laman biasa untuk mempercepat penyingkiran cache"
+	"purge": "Bersihkan",
+	"purge-descriptionmsg": "Menambah tab pembersihan pada semua laman biasa yang membolehkan pembersihan cache dengan cepat",
+	"purge-failed": "Pembersihan gagal"
 }
