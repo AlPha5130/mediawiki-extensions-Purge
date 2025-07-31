@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chaiwan2009",
 			"Minh Nguyen",
 			"Minh Nguyen\r * @author Vinhtantran\r */\r"
 		]
 	},
 	"purge": "Làm mới",
-	"purge-descriptionmsg": "Thêm một tab tẩy bộ đệm tại những trang bình thường để cho tẩy nhanh bộ đệm"
+	"purge-descriptionmsg": "Thêm một tab tẩy bộ đệm tại những trang bình thường để cho tẩy nhanh bộ đệm",
+	"purge-failed": "Làm mới không thành công"
 }
