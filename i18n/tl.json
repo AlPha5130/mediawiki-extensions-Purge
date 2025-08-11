@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"AnakngAraw\r */\r"
+			"AnakngAraw\r */\r",
+			"Chlod"
 		]
 	},
-	"purge": "purgahin/linisin",
-	"purge-descriptionmsg": "Nagdaragdag ng isang laylayan ng pampurga sa ibabaw ng lahat ng pangkaraniwang mga pahina para sa maliksing pagpupurga ng taguan"
+	"purge": "Purgahin",
+	"purge-descriptionmsg": "Nagdaragdag ng isang laylayan ng pampurga sa ibabaw ng lahat ng pangkaraniwang mga pahina para sa maliksing pagpupurga ng taguan",
+	"purge-failed": "Nabigo ang pagpupurga"
 }
